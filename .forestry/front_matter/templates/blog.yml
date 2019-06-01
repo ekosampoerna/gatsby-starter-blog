@@ -2,6 +2,11 @@
 label: Blog
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: textarea
   type: textarea
   default: ''
@@ -11,5 +16,14 @@ fields:
     schema:
       format: markdown
   label: Textarea
+- name: publish
+  type: datetime
+  label: Publish
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 pages:
 - create/Post.md
